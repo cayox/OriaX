@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
 
     <link href="css/style.css" rel="stylesheet">
     <link href="css/fontawesome-free/css/all.min.css" rel="stylesheet">
@@ -13,57 +13,145 @@
 </head>
 <body class="">
 
-<div class="min-h-full">
-    <nav class="bg-accent-500">
-      <div class="max-w-7xl mx-auto h-16">
-        <div class="flex items-center justify-between">
-          <div class="flex items-center">
+<div class="min-h-full bg-accent-500">
+    <nav class="bg-accent-500 mx-auto" style="margin: 0 auto; display: table;">
+      <div class="max-w-7xl h-24"> 
+        <div class="flex items-center ">
+            <a href="/" class="blogger text-3xl my-auto text-accent-100 mr-4">German Egyptian Auto Group</a>
             <div class="flex-shrink-0">
-              <a href="/" class="my-1">
-                <img class="h-14" src="assets/img/Logo_hor.png" alt="Banner">
-              </a>
+                <a href="/" class="my-1">
+                    <img class="h-24" src="assets/img/Logo_text.png" alt="Banner">
+                </a>
             </div>
-            <div class="hidden md:block">
-              <div class="ml-10 flex items-baseline space-x-4">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="bg-accent-600 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Discover | يكتشف</a>
-              </div>
-            </div>
-          </div>
+            <a href="/" class="blogger text-3xl my-auto text-accent-100 ml-4">الألمانيه المصريه لتجارة السيارات</a>
+        </div>
       </div>
     </nav>
     <main class="">
       <div class="h-96 w-full bg-accent-500 overflow-auto">
-        <div class="w-11/12 lg:w-1/2 rounded-2xl bg-accent-100 shadow-2xl h-60 mx-auto my-auto p-4">
+        <div class="w-11/12 lg:w-1/2 rounded-2xl bg-accent-100 shadow-2xl h-72 mx-auto my-auto p-4">
           <h1 class="text-3xl text-accent-900 font-sans font-bold mt-2">Search</h1>
           <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-3 gap-2 mx-auto mt-4">
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-            <div class="">
-              <label for="marke" class="font-medium font-sans text-accent-900">Marke</label>
-              <input type="text" id="marke" name="marke" class="rounded-xl border border-accent-500 bg-white pl-1 active:outline-none" placeholder="Marke"></input>
-            </div>
-          </div>
-          <button class="mt-6 ml-4 px-6 py-1 rounded-xl h-12 bg-accent-600 text-accent-100 hover:bg-accent-700 hover:shadow hover:shadow-accent-500 font-bold transition-all duration-200 ease-in">Search</button>
 
+                <div>
+                    <label for="brand" class="block font-medium font-sans text-accent-900">Brand</label>
+                    <select type="text" id="brand" name="brand" class="block rounded-xl border border-accent-500 bg-white pl-2 h-8 active:outline-none w-48">
+                        <option value="BMW" selected>BMW</option>
+                        <option value="Benz">Benz</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label for="model" class="block font-medium font-sans text-accent-900">Model</label>
+                    <input type="text" id="model" name="model" class="block rounded-xl border border-accent-500 bg-white pl-2 h-8 active:outline-none w-48" placeholder="Model"></input>
+                </div>
+                
+
+                <div class="flex justify-start gap-4">
+                    <div class="">
+                        <label for="year_min" class="h-6 block font-medium font-sans text-accent-900">Year</label>
+                        <select  id="year_min" name="year_min" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" placeholder="Year">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                        </select>
+                    </div>
+                    <div class="text-sm font-sans mt-8">
+                        to 
+                    </div>
+                    <div class="">
+                        <label for="year_max" class="block h-6 font-medium font-sans text-accent-900"></label>
+                        <select  id="year_max" name="year_max" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" placeholder="Year">
+                            <option value="2000">2000</option>
+                            <option value="2001">2001</option>
+                            <option value="2002">2002</option>
+                            <option value="2003">2003</option>
+                            <option value="2004">2004</option>
+                            <option value="2005">2005</option>
+                            <option value="2006">2006</option>
+                            <option value="2007">2007</option>
+                            <option value="2008">2008</option>
+                            <option value="2009">2009</option>
+                            <option value="2010">2010</option>
+                            <option value="2011">2011</option>
+                            <option value="2012">2012</option>
+                            <option value="2013">2013</option>
+                            <option value="2014">2014</option>
+                            <option value="2015">2015</option>
+                            <option value="2016">2016</option>
+                            <option value="2017">2017</option>
+                            <option value="2018">2018</option>
+                            <option value="2019">2019</option>
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022" selected>2022</option>
+                        </select>
+                    </div>
+
+                </div>
+              
+                <div>
+                    <div class="flex justify-start gap-4">
+                        <div class="">
+                            <label for="km_min" class="h-6 block font-medium font-sans text-accent-900">Kilometers</label>
+                            <input type="number" id="km_min" name="km_min" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" value="0"></select>
+                        </div>
+                        <div class="text-sm font-sans mt-8">
+                            to 
+                        </div>
+                        <div class="">
+                            <label for="km_max" class="h-6 block font-medium font-sans text-accent-900"></label>
+                            <input type="number" id="km_max" name="km_max" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" placeholder="100000"></select>
+                        </div>
+    
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="engine_size" class="block font-medium font-sans text-accent-900">Engine Size</label>
+                    <input type="text" id="engine_size" name="engine_size" class="block rounded-xl border border-accent-500 bg-white pl-2 h-8 active:outline-none w-48" placeholder="Engine Size"></input>      
+                </div>
+
+                <div>
+                    <div class="flex justify-start gap-4">
+                        <div class="">
+                            <label for="price_min" class="h-6 block font-medium font-sans text-accent-900">Price</label>
+                            <input type="number" id="price_min" name="price_min" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" value="0"></select>
+                        </div>
+                        <div class="text-sm font-sans mt-8">
+                            to 
+                        </div>
+                        <div class="">
+                            <label for="price_max" class="h-6 block font-medium font-sans text-accent-900"></label>
+                            <input type="number" id="price_max" name="price_max" class="block pl-2 h-8 rounded-xl border border-accent-500 bg-white active:outline-none w-20" placeholder="100000"></select>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+            <button class="mt-6 px-6 py-1 rounded-xl h-12 bg-accent-600 text-accent-100 hover:bg-accent-700 hover:shadow hover:shadow-accent-500 font-bold transition-all duration-200 ease-in">Search</button>
+          </div>
+          
         </div>
 
       </div>
@@ -71,36 +159,37 @@
         <div class="min-w-full mx-auto py-6 sm:px-6 lg:px-8 z-20">
             <div class="rounded-xl">
                 <!-- card start -->
-                <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
                     <div class="">
-                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
                         <!-- <div class="float-right m-4 p-4">
                             <h3 class="font-sans font-bold text-lg">10.484 km</h3>
                         </div> -->
                         <div class="pl-2 pt-2">
                             <div class="">
-                                <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                                <div class="flex justify-start">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
                                     <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
                                     <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                                </div>
+                                </div> -->
                                 
-                                <h3 class="font-sans text-lg font-medium">S V12</h3>
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-                                <div class="float-left mt-2 text-left text-lg">
+                                <div class="mt-2 text-left text-lg">
                                     <ul>
-                                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                                    </ul>
-                                </div>
-
-                            </div>          
-                            
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                                <span class="float-right mt-4 pr-4"> 
+                                    <i class="fa-solid fa-floppy-disk w-4 fa-xl text-highlight hover:text-accent-500 transition-all duration-100 ease-in"></i>
+                                </span>
+                                
+                            </div>  
                         </div>
-                        
                     </div>
                 </div>
                 <!-- card end -->
@@ -108,294 +197,210 @@
 
 
 
-                <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-                  <div class="">
-                      <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-                      <!-- <div class="float-right m-4 p-4">
-                          <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-                      </div> -->
-                      <div class="pl-2 pt-2">
-                          <div class="">
-                              <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                              <div class="flex justify-start">
-                                  <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                                  <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                                  <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                              </div>
-                              
-                              <h3 class="font-sans text-lg font-medium">S V12</h3>
-
-                              <div class="float-left mt-2 text-left text-lg">
-                                  <ul>
-                                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                                  </ul>
-                              </div>
-
-                          </div>          
-                          
-                      </div>
-                      
-                  </div>
-              </div>
-              <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-                <div class="">
-                    <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-                    <!-- <div class="float-right m-4 p-4">
-                        <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-                    </div> -->
-                    <div class="pl-2 pt-2">
-                        <div class="">
-                            <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                            <div class="flex justify-start">
-                                <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                                <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                                <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                            </div>
-                            
-                            <h3 class="font-sans text-lg font-medium">S V12</h3>
-
-                            <div class="float-left mt-2 text-left text-lg">
-                                <ul>
-                                    <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                                    <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                                    <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                                    <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                                </ul>
-                            </div>
-
-                        </div>          
-                        
-                    </div>
-                    
-                </div>
-            </div>
-            <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-              <div class="">
-                  <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-                  <!-- <div class="float-right m-4 p-4">
-                      <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-                  </div> -->
-                  <div class="pl-2 pt-2">
-                      <div class="">
-                          <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                          <div class="flex justify-start">
-                              <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                              <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                              <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                          </div>
-                          
-                          <h3 class="font-sans text-lg font-medium">S V12</h3>
-
-                          <div class="float-left mt-2 text-left text-lg">
-                              <ul>
-                                  <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                                  <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                                  <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                                  <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                              </ul>
-                          </div>
-
-                      </div>          
-                      
-                  </div>
-                  
-              </div>
-          </div>
-          <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-            <div class="">
-                <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-                <!-- <div class="float-right m-4 p-4">
-                    <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-                </div> -->
-                <div class="pl-2 pt-2">
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
                     <div class="">
-                        <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                        <div class="flex justify-start">
-                            <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                            <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                            <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
+
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
                         </div>
-                        
-                        <h3 class="font-sans text-lg font-medium">S V12</h3>
+                    </div>
+                </div>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-                        <div class="float-left mt-2 text-left text-lg">
-                            <ul>
-                                <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                                <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                                <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                                <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                            </ul>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
                         </div>
-
-                    </div>          
-                    
-                </div>
-                
-            </div>
-        </div>
-        <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-          <div class="">
-              <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-              <!-- <div class="float-right m-4 p-4">
-                  <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-              </div> -->
-              <div class="pl-2 pt-2">
-                  <div class="">
-                      <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                      <div class="flex justify-start">
-                          <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                          <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                          <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                      </div>
-                      
-                      <h3 class="font-sans text-lg font-medium">S V12</h3>
-
-                      <div class="float-left mt-2 text-left text-lg">
-                          <ul>
-                              <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                              <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                              <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                              <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                          </ul>
-                      </div>
-
-                  </div>          
-                  
-              </div>
-              
-          </div>
-      </div>
-      <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-        <div class="">
-            <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-            <!-- <div class="float-right m-4 p-4">
-                <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-            </div> -->
-            <div class="pl-2 pt-2">
-                <div class="">
-                    <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                    <div class="flex justify-start">
-                        <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                        <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                        <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
                     </div>
-                    
-                    <h3 class="font-sans text-lg font-medium">S V12</h3>
+                </div>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-                    <div class="float-left mt-2 text-left text-lg">
-                        <ul>
-                            <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                            <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                            <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                            <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                        </ul>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
+                        </div>
                     </div>
-
-                </div>          
-                
-            </div>
-            
-        </div>
-    </div>
-    <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-      <div class="">
-          <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-          <!-- <div class="float-right m-4 p-4">
-              <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-          </div> -->
-          <div class="pl-2 pt-2">
-              <div class="">
-                  <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                  <div class="flex justify-start">
-                      <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                      <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                      <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-                  </div>
-                  
-                  <h3 class="font-sans text-lg font-medium">S V12</h3>
-
-                  <div class="float-left mt-2 text-left text-lg">
-                      <ul>
-                          <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                          <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                          <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                          <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                      </ul>
-                  </div>
-
-              </div>          
-              
-          </div>
-          
-      </div>
-  </div>
-  <div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-    <div class="">
-        <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-        <!-- <div class="float-right m-4 p-4">
-            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-        </div> -->
-        <div class="pl-2 pt-2">
-            <div class="">
-                <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-                <div class="flex justify-start">
-                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
                 </div>
-                
-                <h3 class="font-sans text-lg font-medium">S V12</h3>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-                <div class="float-left mt-2 text-left text-lg">
-                    <ul>
-                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                        <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                    </ul>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
                 </div>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-            </div>          
-            
-        </div>
-        
-    </div>
-</div>
-<div class="h-64 bg-white mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
-  <div class="">
-      <img src="https://img.classistatic.de/api/v1/mo-prod/images/38/38e21d9e-bace-4607-ad97-4bc6b5d3f72c?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
-      <!-- <div class="float-right m-4 p-4">
-          <h3 class="font-sans font-bold text-lg">10.484 km</h3>
-      </div> -->
-      <div class="pl-2 pt-2">
-          <div class="">
-              <h1 class="font-sans font-bold text-2xl mb-1">Aston Martin Vanquish S V12</h1>
-              <div class="flex justify-start">
-                  <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
-                  <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">387 kW (526 PS)</span>
-                  <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
-              </div>
-              
-              <h3 class="font-sans text-lg font-medium">S V12</h3>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-              <div class="float-left mt-2 text-left text-lg">
-                  <ul>
-                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-brush"></i></span><span class="font-semibold text-gray-600">Silber</span></li>
-                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-calendar-check"></i></span><span class="font-semibold text-gray-600">10/2005</span></li>
-                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-gas-pump"></i></span><span class="font-semibold text-gray-600">ca. 18,9 l/100km (kombiniert)</span></li>
-                      <li><span class="mr-2 my-1 px-2 text-gray-800"><i class="fa-solid fa-door-closed"></i></span><span class="font-semibold text-gray-600">2/3</span></li>
-                  </ul>
-              </div>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                <div class="h-64 bg-accent-100 mb-6 mx-auto rounded-xl shadow-lg hover:-translate-y-2 hover:shadow-2xl z-0 transition-all ease-in duration-500 w-11/12 lg:w-5/12">
+                    <div class="">
+                        <img src="https://img.classistatic.de/api/v1/mo-prod/images/62/62bd8fc4-97b2-405f-9875-8d3078ae1d47?rule=mo-1024.jpg" class="h-64 rounded-tl-xl rounded-bl-xl float-left mr-2 lg:mr-4">
+                        <!-- <div class="float-right m-4 p-4">
+                            <h3 class="font-sans font-bold text-lg">10.484 km</h3>
+                        </div> -->
+                        <div class="pl-2 pt-2">
+                            <div class="">
+                                <h1 class="font-sans font-bold text-2xl mb-1">Mercedes-Benz A 220</h1>
+                                <!-- <div class="flex justify-start">
+                                    <span class="h-min min-w-fit rounded-full text-purple-800 bg-purple-200 border border-purple-100 text-center px-2 mb-2 mr-2">9.338 km</span>
+                                    <span class="h-min min-w-fit rounded-full text-green-800 bg-green-200 border border-green-100 text-center px-2 mb-2 mr-2">Benzin</span>
+                                </div> -->
+                                
+                                <h3 class="font-sans text-lg font-medium">A -Klasse A 220d 4Matic Urban Paket</h3>
 
-          </div>          
-          
-      </div>
-      
-  </div>
-</div>
+                                <div class="mt-2 text-left text-lg">
+                                    <ul>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-road text-accent-600"></i></span><span class="font-semibold text-gray-600">35.000 km</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-calendar-day text-accent-600"></i></span><span class="font-semibold text-gray-600">2005</span></li>
+                                        <li><span class="mr-2 my-1 text-gray-800 w-4"><i class="fa-solid fa-closed-captioning text-accent-600"></i></span><span class="font-semibold text-gray-600">1600 cm³</span></li>
+                                </div> 
+                                <div class="font-sans font-bold text-2xl mt-2">
+                                    24.999 €
+                                </div> 
+                                
+                            </div>  
+                        </div>
+                    </div>
+                </div>
                 
             </div>
            

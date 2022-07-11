@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+    font-family: 'Blogger'; /*a name to be used later*/
+    src: url('/assets/fonts/blogger-sans.regular.ttf'); /*URL to font*/
+}
+
+.blogger {
+    font-family: 'Blogger';
+}
